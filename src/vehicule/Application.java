@@ -2,6 +2,8 @@ package vehicule;
 
 public class Application {
 	public static void main(String[] args){
+		
+		/*t et v pas trop pertinent comme nom de variable */
 		Vehicule v = new Vehicule();
 		v.setTireSize(0.5588);
 		v.getEngine().setRpm(3500);

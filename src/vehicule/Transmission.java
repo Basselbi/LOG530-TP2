@@ -1,6 +1,8 @@
 package vehicule;
 
 public class Transmission {
+	
+	/*Variable floue non utiliser dans la class courange */
 	public static final int FIRST_GEAR = 1;
 	public static final int SECOND_GEAR = 2;
 	public static final int THIRD_GEAR = 3;
