@@ -2,7 +2,7 @@ package vehicule;
 
 public class Transmission {
 	
-	/*Variable floue non utiliser dans la class courange */
+	 
 	public static final int FIRST_GEAR = 1;
 	public static final int SECOND_GEAR = 2;
 	public static final int THIRD_GEAR = 3;
@@ -10,7 +10,7 @@ public class Transmission {
 	public static final int FIFTH_GEAR = 5;
 	public static final int NEUTRAL= 0;
 	public static final int REVERS_GEAR = -1;
-	protected int currentGear = NEUTRAL;
+	protected int currentGear = 0;
 	protected double differentialRatio = 4.0;
 	
 	public int getCurrentGear() {

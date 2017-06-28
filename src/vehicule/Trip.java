@@ -3,6 +3,7 @@ package vehicule;
 public class Trip {
 	Vehicule vehicule;
 	int distance;
+	double speed=0;
 	
 	public Trip(int distance, Vehicule vehicule) {
 		this.vehicule = vehicule;
@@ -43,12 +44,19 @@ public class Trip {
 		}
 		
 		//calculer la vitesse
-		double speed = calculateSpeed(engineSpeed, gearRatio, differentialRatio, tireDiameter);
+	
+	  speed = calculateSpeed(engineSpeed, gearRatio, differentialRatio, tireDiameter);
 		
 		//calculer le temps nécessaire pour parcourir la distance	
 		double duree = distance / speed;
 		return duree;	
 	}
+	
+	public double calculVitesse() {
+		
+		return  speed;
+		   // body
+		}
 
 	double calculateSpeed(int engineSpeed, double gearRatio, double differentialRatio, double tireDiameter){
 		//Calculer la circonférence de la roue (en mètre)
